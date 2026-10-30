@@ -7,7 +7,7 @@ cd "$(dirname "$0")/.."
 rm -rf dist && mkdir -p dist
 cp auth.js spark.js daily.js hints.js match.js difficulty.js challenge.js badges.js stats.js misquotes.js improv.js phrases-data.js phrases.js world-data.json world.js family.js modes.js season.js sharecard.js taste.js duel-client.js spectate.js reveal.js story.js speak.js voice.js art.js archive.js badges-ui.js dress.js stats-ui.js quip-live.js event.js season-ui.js yearly.js practice.js suggest.js watchlist.js passplay.js packs.js library.js recent.js recent.json seasons.js shelves.js submit.js moderation.js offline.js index.html play.html privacy.html buzz.html buzz.js party.html classroom.js party.js style.css features.css devices.css game.js settings.js sound.js transfer.js profiles.js i18n.js webmcp.js sw.js \
    manifest.webmanifest quotes.json quotes-more.json vibe.json icon.svg icon-192.png icon-512.png \
-   icon-512-maskable.png architecture.svg favicon.svg favicon-32.png apple-touch-icon.png dist/
+   icon-512-maskable.png architecture.svg favicon.svg favicon-32.png apple-touch-icon.png og.png dist/
 cp -R locales fonts dist/
 # The shared jaybulb tokens, refreshed each build when online; the committed copy is the fallback (v91).
 curl -fsS --max-time 10 https://jaybulb.com/tokens.css -o brand/jaybulb-tokens.css.new && mv brand/jaybulb-tokens.css.new brand/jaybulb-tokens.css || rm -f brand/jaybulb-tokens.css.new
