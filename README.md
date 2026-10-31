@@ -6,8 +6,6 @@ Here's the line. Name the movie.
 
 Or the show, the game, the song or the book. 14,434 lines across 16 genres, from the 1930s to now, with a clock if you want one and a friend to beat if you have one. Dad's idea.
 
-**[coda.jaybulb.com →](https://coda.jaybulb.com)** · **[Play →](https://coda.jaybulb.com/play)**
-
 <p>
 <img src="screenshots/web/02-menu.jpg" width="49%">
 <img src="screenshots/web/03-question.jpg" width="49%">

@@ -166,7 +166,7 @@ from `game.js` at game over.
 - [ ] Landing og image: coda.jaybulb.com/og.png returns the HTML shell (SPA fallback), so the landing unfurls with no picture. Serve a real PNG at that path.
 
 ## Ingested 2026-10-30
-- [ ] README doesn't need links at the top, redundant. README super bloated
+- [x] README doesn't need links at the top, redundant. README super bloated
 - [ ] Semver super bloated
 - [ ] Ship latest to App Store, refresh App Store screenshots
 - [ ] Remove demo from landing page; landing needs Hermes' style
