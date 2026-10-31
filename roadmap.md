@@ -163,11 +163,8 @@ from `game.js` at game over.
 - [ ] Stale App Store screenshots. (screenshot: notes/attachments/2026-10-16/app-store-screenshots-3.png)
 
 ## Ingested 2026-10-26
-- [x] Landing og image: coda.jaybulb.com/og.png returns the HTML shell (SPA fallback), so the landing unfurls with no picture. Serve a real PNG at that path.
 
 ## Ingested 2026-10-30
-- [x] README doesn't need links at the top, redundant. README super bloated
 - [ ] Semver super bloated
 - [ ] Ship latest to App Store, refresh App Store screenshots
-- [x] Remove demo from landing page
 - [ ] Full Hermes rebuild of the landing.
