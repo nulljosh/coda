@@ -207,22 +207,12 @@ a.skip:focus { position:fixed; left:1rem; top:1rem; z-index:99; padding:0.5rem 0
   <div class="container">
     <img class="hero-icon" src="icon.svg" alt="Coda icon" width="88" height="88">
     <h1>Here’s the line. Name where it’s from.</h1>
-<div class="demo">
-  <div class="device device-iphone" id="demoFrame" data-title="Coda"><div class="device-screen"><iframe id="demoApp" title="Coda, live" loading="lazy" data-src="/play.html?embed"></iframe></div></div>
-  <p class="demo-caption">This is the <span id="demoDev">iPhone</span> app, live. Try it.</p>
-</div>
-<script>
-(function(){var names={iphone:'iPhone',android:'Android',mac:'Mac',windows:'Windows'},dev=document.documentElement.dataset.device,f=document.getElementById('demoFrame'),i=document.getElementById('demoApp');
-if(!names[dev])dev='iphone';f.className='device device-'+dev;document.getElementById('demoDev').textContent=names[dev];
-if(!document.documentElement.classList.contains('embed'))i.src=i.dataset.src;
-function fit(){i.style.transform='scale('+(i.parentNode.clientWidth/i.offsetWidth)+')';}fit();addEventListener('resize',fit);})();
-</script>
 
     <div class="buttons">
       <a href="/play.html" class="btn btn-primary">Play in the browser</a>
       <a href="https://apps.apple.com/us/app/id6804394619" class="btn btn-outline">iPhone &amp; iPad</a>
       <a href="https://apps.apple.com/us/app/id6804394619?mt=12" class="btn btn-outline">Mac</a>
-      <a href="https://github.com/nulljosh/labs/tree/main/quotestreak" class="btn btn-outline">Source</a>
+      <a href="https://github.com/nulljosh/coda" class="btn btn-outline">Source</a>
     </div>
   </div>
 </section>
