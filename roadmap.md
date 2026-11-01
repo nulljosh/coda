@@ -8,9 +8,6 @@
   destination even by explicit UDID -- needs the matching platform component installed,
   then a screenshot check (menu, round, game-over, speed-round clock).
 
-## Name
-- [ ] Store name locked as Misquote on the draft app info (2026-11-01, Joshua said handle it; read back three times). Next: the full rename to Misquote everywhere, repo, folder, landing at misquote.jaybulb.com, docs, app display name, per the one-name rule, then ship it with the next version.
-
 ## Milestones
 
 Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a fix as a patch, and a major only when the whole game changes (honest semver, 2026-11-01; this list used to be "Road to v100", one major per milestone). Each one ships on the web first, then iOS and Mac in the next store batch.
