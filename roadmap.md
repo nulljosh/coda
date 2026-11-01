@@ -11,7 +11,6 @@
 ## Milestones
 
 Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a fix as a patch, and a major only when the whole game changes (honest semver, 2026-11-01; this list used to be "Road to v100", one major per milestone). Each one ships on the web first, then iOS and Mac in the next store batch.
-One major version per milestone. Each one ships on the web first (deploy the same day), then iOS and Mac in the next store batch. Only one store build is in review at a time, so native majors queue and go out together. A milestone is done when it is live, tested, and its line is checked here.
 
 ### Era 1: a deeper game (2 to 10)
 
