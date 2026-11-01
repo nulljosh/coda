@@ -1,6 +1,6 @@
 # Coda Roadmap
 
-- [ ] Verify iPad layout visually on simulator -- 2026-09-02. `TARGETED_DEVICE_FAMILY = "1,2"`
+- [x] (11-01: seen on the iPad Pro 13 simulator, menu, question, reveal and speed round via `-shot`; centered column, nothing clipped or stretched) Verify iPad layout visually on simulator -- 2026-09-02. `TARGETED_DEVICE_FAMILY = "1,2"`
   already set; iOS `ContentView` uses `NavigationStack` with flexible frames throughout
   (only card/button-level fixed widths, not page-level), so it should scale reasonably, but
   nobody has actually seen it on an iPad screen. This machine's Xcode only has the iOS 26.5
