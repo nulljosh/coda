@@ -11,6 +11,7 @@ modeSelect.insertAdjacentHTML('afterend', `<div id="mod" class="panel hidden">
   </div>`);
 const modEsc = (t) => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 async function loadMod() {
+  if (!window.quotableSignedIn?.()) return;   // signed out: no call, no 403 in the console
   const { data } = await rpc('quotestreak_moderation');
   $('start-mod').classList.toggle('hidden', !data);
   if (!data) return;
