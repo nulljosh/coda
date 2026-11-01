@@ -160,7 +160,7 @@ from `game.js` at game over.
 - [ ] QA
 
 ## Ingested 2026-10-16
-- [ ] Stale App Store screenshots. (screenshot: notes/attachments/2026-10-16/app-store-screenshots-3.png)
+- [ ] (blocked: waits on the new store name, 2026-11-01; the shots show the brand, so they get shot once the name is picked and go on the 1.3.1 draft) Stale App Store screenshots. (screenshot: notes/attachments/2026-10-16/app-store-screenshots-3.png)
 
 ## Ingested 2026-10-26
 
