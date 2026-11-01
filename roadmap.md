@@ -32,14 +32,6 @@ Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a f
 ### Era 10: the hundred (91 to 100)
 - [ ] **Certified access.** A full outside accessibility audit. *Waiting on an outside auditor. The internal WCAG 2.2 pass is done and its fixes are live (docs/ACCESSIBILITY.md).*
 
-## TODO, next time you are at a real Mac
-
-Left over from the 2026-09-01 art-flash fix. None of it can run in a Claude Code web
-session (no Swift toolchain; TMDB/iTunes/mzstatic are refused by the egress policy).
-
-- [ ] `TMDB_API_KEY=... node scripts/fetch-tmdb-art.mjs`, the 3 remaining movie-side
-      gaps are TV series; the script now falls through to /search/tv.
-- [ ] Ship as 1.2: `asc workflow run ship-ios VERSION:1.2.0`.
 
 ## App Store status
 1.1 (2026-08-31) brings the native apps to parity with the web game: sound effects with a volume
@@ -143,7 +135,7 @@ from `game.js` at game over.
       archive build under automatic signing. Blocked on Joshua: enable Sign In with Apple on the iOS App ID
       in the portal, and either flip both targets to manual signing (point directly at the asc-fetched
       profiles) or let Xcode auto-generate a Mac dev profile once signed into the Apple ID in Xcode.
-- [ ] Scores are client-reported; no anti-cheat. Add a server-side check only if the board gets gamed.
+- Scores are client-reported; no anti-cheat. Add a server-side check only if the board gets gamed.
 
 ## TUI pilot (2026-09-05)
 - `quotestreak-tui` SwiftPM target (SwiftTUI). `swift build && ./.build/debug/quotestreak-tui` pulls one round from /api/random and shows the quote + marked answer. Not a guessing loop. Needs a real TTY.
