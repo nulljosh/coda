@@ -8,8 +8,9 @@
   destination even by explicit UDID -- needs the matching platform component installed,
   then a screenshot check (menu, round, game-over, speed-round clock).
 
-## Road to v100
+## Milestones
 
+Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a fix as a patch, and a major only when the whole game changes (honest semver, 2026-11-01; this list used to be "Road to v100", one major per milestone). Each one ships on the web first, then iOS and Mac in the next store batch.
 One major version per milestone. Each one ships on the web first (deploy the same day), then iOS and Mac in the next store batch. Only one store build is in review at a time, so native majors queue and go out together. A milestone is done when it is live, tested, and its line is checked here.
 
 ### Era 1: a deeper game (2 to 10)
@@ -19,12 +20,12 @@ One major version per milestone. Each one ships on the web first (deploy the sam
 ### Era 3: new ways to guess (21 to 30)
 
 ### Era 4: every screen (31 to 40)
-- [ ] **v36 Google Play.** The Android app in the Play Store. *Waiting on a Play developer account.*
-- [ ] **v37 Microsoft Store.** The Windows app in the Store. *Waiting on a Microsoft developer account.*
-- [ ] **v38 Flathub.** The Linux app on Flathub. *Waiting on the Flathub submission.*
+- [ ] **Google Play.** The Android app in the Play Store. *Waiting on a Play developer account.*
+- [ ] **Microsoft Store.** The Windows app in the Store. *Waiting on a Microsoft developer account.*
+- [ ] **Flathub.** The Linux app on Flathub. *Waiting on the Flathub submission.*
 
 ### Era 5: parties (41 to 50)
-- [ ] **v48 Discord.** A Discord Activity. *Waiting on a Discord developer application.*
+- [ ] **Discord.** A Discord Activity. *Waiting on a Discord developer application.*
 
 ### Era 6: know more (51 to 60)
 
@@ -33,11 +34,11 @@ One major version per milestone. Each one ships on the web first (deploy the sam
 ### Era 8: the content engine (71 to 80)
 
 ### Era 9: a show (81 to 90)
-- [ ] **v89 Supporter pack.** An optional one-dollar cosmetic pack, nothing locked. *Waiting on payments: a $1 web checkout and a $0.99 in-app purchase need setting up first.*
-- [ ] **v90 Store in twenty languages.** Localized listings and screenshots. *Waiting on App Review: the listings can change once 1.3.0 is out, with the next version.*
+- [ ] **Supporter pack.** An optional one-dollar cosmetic pack, nothing locked. *Waiting on payments: a $1 web checkout and a $0.99 in-app purchase need setting up first.*
+- [ ] **Store in twenty languages.** Localized listings and screenshots. *Waiting on App Review: the listings can change once 1.3.0 is out, with the next version.*
 
 ### Era 10: the hundred (91 to 100)
-- [ ] **v98 Certified access.** A full outside accessibility audit. *Waiting on an outside auditor. The internal WCAG 2.2 pass is done and its fixes are live (docs/ACCESSIBILITY.md).*
+- [ ] **Certified access.** A full outside accessibility audit. *Waiting on an outside auditor. The internal WCAG 2.2 pass is done and its fixes are live (docs/ACCESSIBILITY.md).*
 
 ## TODO, next time you are at a real Mac
 
@@ -165,9 +166,9 @@ from `game.js` at game over.
 ## Ingested 2026-10-26
 
 ## Ingested 2026-10-30
-- [ ] Semver super bloated
+- [x] (11-01: the store is at an honest 1.3.0; the bloat was this roadmap's "Road to v100", one major per milestone. Renamed Milestones, each ships as a minor, vNN labels dropped) Semver super bloated
 - [ ] Ship latest to App Store, refresh App Store screenshots
-- [ ] Full Hermes rebuild of the landing.
+- [x] (10-31: done in 909cde9 and 5640644, nav, the real app behind the hero, band of cells, platforms, Coda's own engraved footer scene; checked live 11-01) Full Hermes rebuild of the landing.
 
 ## Ingested 2026-10-31
 - [ ] Stale name on the App Store: listing still says Quotestreak, 1.3.0 Ready for Distribution (notes/attachments/2026-10-31/quotestreak-1.png). Same rename item as the store listing above.
