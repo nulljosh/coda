@@ -25,13 +25,15 @@
 <link rel="stylesheet" href="kit-tokens.css">
 <link rel="stylesheet" href="kit.css">
 <style>
-body { font-family: "Quip Sans", var(--font); }
+body { font-family: var(--font); }
 .btn-solid, .btn-solid:hover { color: #15161a; }
 .stage iframe { display: block; width: 100%; height: 100%; border: 0; background: #0f1013; }
 .foot { --scene-ink: #e0a800; }
 @media (prefers-color-scheme: dark) { .foot { --scene-ink: #ffcc00; } }
 </style>
 <script src="landing.js" defer></script>
+<link rel="stylesheet" href="hero.css">
+<script src="hero.js" defer></script>
 </head>
 <body>
 
@@ -59,9 +61,8 @@ body { font-family: "Quip Sans", var(--font); }
     </div>
     <p class="fine">No sign-up, nothing to install. Dad's idea.</p>
   </div>
-  <div class="demo-wrap" id="demo" aria-hidden="true">
-    <div class="stage"><iframe title="Coda, live" tabindex="-1" loading="lazy" src="/play.html?embed"></iframe></div>
-  </div>
+  <!-- The real game behind the copy: lines from quotes.json guessed on their own, the poster revealed on the right answer. Decoration only. -->
+  <div class="hero-bg" aria-hidden="true" inert><div class="qwall" id="qwall"></div></div>
 </section>
 
 <section class="band" id="features">
