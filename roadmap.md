@@ -130,7 +130,7 @@ web subset (the repo root also holds ios/, macos/, metadata/).
 
 Pages serves extensionless URLs, so `/play.html` now 308s to `/play`. Old links still work.
 
-- [ ] ship-ios workflow: export step fails on App Groups with the stale manual profile; drop --export-options and add `--xcodebuild-flag -allowProvisioningUpdates` (done by hand for 1.2.1)
+- [x] (11-01: export now automatic signing + -allowProvisioningUpdates) ship-ios workflow: export step fails on App Groups with the stale manual profile; drop --export-options and add `--xcodebuild-flag -allowProvisioningUpdates` (done by hand for 1.2.1)
 
 ## Accounts + leaderboard (web live 2026-09-02)
 Supabase (shared `spark` project): table `quotestreak_scores` (RLS: anyone reads, only own inserts), view
@@ -168,3 +168,6 @@ from `game.js` at game over.
 - [ ] Semver super bloated
 - [ ] Ship latest to App Store, refresh App Store screenshots
 - [ ] Full Hermes rebuild of the landing.
+
+## Ingested 2026-10-31
+- [ ] Stale name on the App Store: listing still says Quotestreak, 1.3.0 Ready for Distribution (notes/attachments/2026-10-31/quotestreak-1.png). Same rename item as the store listing above.
