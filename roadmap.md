@@ -1,12 +1,5 @@
 # Coda Roadmap
 
-- [x] (11-01: seen on the iPad Pro 13 simulator, menu, question, reveal and speed round via `-shot`; centered column, nothing clipped or stretched) Verify iPad layout visually on simulator -- 2026-09-02. `TARGETED_DEVICE_FAMILY = "1,2"`
-  already set; iOS `ContentView` uses `NavigationStack` with flexible frames throughout
-  (only card/button-level fixed widths, not page-level), so it should scale reasonably, but
-  nobody has actually seen it on an iPad screen. This machine's Xcode only has the iOS 26.5
-  SDK with the iOS 26.2 runtime downloaded, so `xcodebuild` won't recognize any simulator
-  destination even by explicit UDID -- needs the matching platform component installed,
-  then a screenshot check (menu, round, game-over, speed-round clock).
 
 ## Milestones
 
@@ -130,7 +123,6 @@ web subset (the repo root also holds ios/, macos/, metadata/).
 
 Pages serves extensionless URLs, so `/play.html` now 308s to `/play`. Old links still work.
 
-- [x] (11-01: export now automatic signing + -allowProvisioningUpdates) ship-ios workflow: export step fails on App Groups with the stale manual profile; drop --export-options and add `--xcodebuild-flag -allowProvisioningUpdates` (done by hand for 1.2.1)
 
 ## Accounts + leaderboard (web live 2026-09-02)
 Supabase (shared `spark` project): table `quotestreak_scores` (RLS: anyone reads, only own inserts), view
@@ -165,9 +157,7 @@ from `game.js` at game over.
 ## Ingested 2026-10-26
 
 ## Ingested 2026-10-30
-- [x] (11-01: the store is at an honest 1.3.0; the bloat was this roadmap's "Road to v100", one major per milestone. Renamed Milestones, each ships as a minor, vNN labels dropped) Semver super bloated
 - [ ] Ship latest to App Store, refresh App Store screenshots
-- [x] (10-31: done in 909cde9 and 5640644, nav, the real app behind the hero, band of cells, platforms, Coda's own engraved footer scene; checked live 11-01) Full Hermes rebuild of the landing.
 
 ## Ingested 2026-10-31
 - [ ] Stale name on the App Store: listing still says Quotestreak, 1.3.0 Ready for Distribution (notes/attachments/2026-10-31/quotestreak-1.png). Same rename item as the store listing above.
