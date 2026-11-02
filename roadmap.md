@@ -25,7 +25,6 @@ Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a f
 ### Era 8: the content engine (71 to 80)
 
 ### Era 9: a show (81 to 90)
-- [ ] **Store in twenty languages.** Localized listings and screenshots. *Waiting on App Review: the listings can change once 1.3.0 is out, with the next version.*
 
 ### Era 10: the hundred (91 to 100)
 
