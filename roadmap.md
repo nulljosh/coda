@@ -13,7 +13,6 @@ Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a f
 
 ### Era 4: every screen (31 to 40)
 - [ ] **Google Play.** The Android app in the Play Store. *Waiting on a Play developer account.*
-- [ ] **Microsoft Store.** The Windows app in the Store. *Waiting on a Microsoft developer account.*
 - [ ] **Flathub.** The Linux app on Flathub. *Waiting on the Flathub submission.*
 
 ### Era 5: parties (41 to 50)
@@ -26,11 +25,9 @@ Each milestone is a feature, so it ships as a minor version (1.4, 1.5, ...), a f
 ### Era 8: the content engine (71 to 80)
 
 ### Era 9: a show (81 to 90)
-- [ ] **Supporter pack.** An optional one-dollar cosmetic pack, nothing locked. *Waiting on payments: a $1 web checkout and a $0.99 in-app purchase need setting up first.*
 - [ ] **Store in twenty languages.** Localized listings and screenshots. *Waiting on App Review: the listings can change once 1.3.0 is out, with the next version.*
 
 ### Era 10: the hundred (91 to 100)
-- [ ] **Certified access.** A full outside accessibility audit. *Waiting on an outside auditor. The internal WCAG 2.2 pass is done and its fixes are live (docs/ACCESSIBILITY.md).*
 
 
 ## App Store status
@@ -121,9 +118,7 @@ Supabase (shared `spark` project): table `quotestreak_scores` (RLS: anyone reads
 `quotestreak_leaderboard` (best score per user per mode). Web has email/password + Google. `auth.js`, wired
 from `game.js` at game over.
 
-- [ ] Apple sign-in on WEB: needs a Services ID + .p8-signed secret on spark (authorize returns 400).
       Blocked on Joshua (Apple Developer portal). Runbook in ~/Documents/Code/roadmap.md "Apple sign-in on WEB".
-- [ ] 1.2.2 ship attempt 2026-09-03 (iOS Settings sheet UI change) BLOCKED on signing: iOS automatic-signing
       archive still resolves to "iOS Team Provisioning Profile" (dev-team default), which lacks Sign In with
       Apple / com.apple.developer.applesignin, even after `asc signing fetch --create-missing` made a fresh
       IOS_APP_STORE profile with the entitlement and it was dropped in
@@ -152,5 +147,4 @@ from `game.js` at game over.
 - [ ] Ship latest to App Store, refresh App Store screenshots
 
 ## Ingested 2026-10-31
-- [ ] Stale name on the App Store: listing still says Quotestreak, 1.3.0 Ready for Distribution (notes/attachments/2026-10-31/quotestreak-1.png). Same rename item as the store listing above.
   (blocked: Joshua picks the new name, 2026-11-01) Apple refused "Coda" on the 1.3.1 app info 2026-11-01 ("already being used"); one-name rule means the brand moves. Probed free: Apothegm, Aphorist, Misquote, Gnomic, Ascription, Epithet. Taken: Epigram Aphorism Maxim Adage Proverb Quip Byword Motto Epigraph Sententia Quotable Laconic Chreia Witticism Quotation Attribution Saying Utterance Paraphrase Florilegium Commonplace Citation Verbatim. iOS and Mac 1.3.1 drafts exist and keep the app info editable; listing restored to Quotestreak.
