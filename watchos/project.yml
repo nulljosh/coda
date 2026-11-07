@@ -14,14 +14,17 @@ targets:
     type: application
     platform: watchOS
     sources:
-      - path: .
-        excludes:
-          - "*.xcodeproj"
-          - "*.yml"
-          - "*.md"
+      - ContentView.swift
+      - QuotableWatchApp.swift
+      - Models
+      - Views
+      - Assets.xcassets
       - path: ../ios/Quotable/Quote.swift
+        group: Shared
       - path: ../ios/Quotable/Daily.swift
+        group: Shared
       - path: ../quotes.json
+        group: Shared
         buildPhase: resources
     settings:
       INFOPLIST_FILE: ""
