@@ -147,3 +147,6 @@ from `game.js` at game over.
 
 ## Ingested 2026-10-31
   (blocked: Joshua picks the new name, 2026-11-01) Apple refused "Coda" on the 1.3.1 app info 2026-11-01 ("already being used"); one-name rule means the brand moves. Probed free: Apothegm, Aphorist, Misquote, Gnomic, Ascription, Epithet. Taken: Epigram Aphorism Maxim Adage Proverb Quip Byword Motto Epigraph Sententia Quotable Laconic Chreia Witticism Quotation Attribution Saying Utterance Paraphrase Florilegium Commonplace Citation Verbatim. iOS and Mac 1.3.1 drafts exist and keep the app info editable; listing restored to Quotestreak.
+
+## Stashed 2026-11-07
+- [ ] iOS 1.3.1 is built, attached and validated but not submitted: Apple requires iMessage app screenshots (IMESSAGE_IPAD_13 and the iPhone iMessage set) for the new iMessage extension. Take them in the simulator, upload, then `asc review submit --app 6804394619 --version-id a838a16e-c075-4b89-80ef-dbb7e83ce90f --latest --confirm`.
