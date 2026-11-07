@@ -101,11 +101,26 @@ targets:
         DEVELOPMENT_TEAM: QMM486NPYC
         CODE_SIGN_STYLE: Automatic
 
+  CodaUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: Quotable
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.heyitsmejosh.quotable.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        DEVELOPMENT_TEAM: QMM486NPYC
+        TEST_TARGET_NAME: Quotable
+
 schemes:
   Quotable:
     build:
       targets:
         Quotable: all
+    test:
+      targets: [CodaUITests]
     run:
       config: Debug
     archive:
