@@ -10,14 +10,19 @@ final class MessagesShots: XCTestCase {
         sms.terminate()
         sms.launch()
         sleep(3)
-        if sms.cells.firstMatch.exists, !sms.buttons["add"].exists { sms.cells.firstMatch.tap(); sleep(2) }
-        if sms.keyboards.firstMatch.exists { sms.navigationBars.firstMatch.tap(); sleep(1) } // keyboard hides the drawer's lower rows
-        sms.buttons["add"].firstMatch.tap()
+        sms.cells.firstMatch.tap() // the simulator's seeded thread; run on a freshly erased simulator
         sleep(2)
-        let coda = sms.cells.containing(.staticText, identifier: "Coda").firstMatch
-        if !coda.waitForExistence(timeout: 3), sms.buttons["More"].exists { sms.buttons["More"].tap() }
-        if !coda.waitForExistence(timeout: 3) { sms.cells["Photos"].firstMatch.swipeUp() }
-        if !coda.exists { print("TREE3", sms.debugDescription) }
+        sms.buttons["add"].firstMatch.tap()
+        let coda = sms.staticTexts["Coda"].firstMatch
+        let photos = sms.staticTexts["Photos"].firstMatch
+        sleep(2)
+        // The + sheet opens on the photo grid; dragging it up reveals the list of iMessage apps.
+        for _ in 0..<4 where !(coda.exists && coda.isHittable) {
+            let start = sms.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: photos.exists ? 0.6 : 0.8))
+            start.press(forDuration: 0.1, thenDragTo: sms.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.2)))
+            sleep(1)
+        }
+        if !coda.exists { print("TREE4", sms.debugDescription) }
         coda.tap()
         sleep(5)
         save("01-start")
