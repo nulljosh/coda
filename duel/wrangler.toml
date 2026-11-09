@@ -4,7 +4,11 @@ name = "quotestreak-duel"
 main = "worker.js"
 compatibility_date = "2025-07-01"
 workers_dev = false
-routes = [{ pattern = "coda.jaybulb.com/duel/*", zone_name = "jaybulb.com" }]
+# ponytail: quotestreak host kept for builds and links from before the rename
+routes = [
+  { pattern = "coda.jaybulb.com/duel/*", zone_name = "jaybulb.com" },
+  { pattern = "quotestreak.jaybulb.com/duel/*", zone_name = "jaybulb.com" },
+]
 
 [[durable_objects.bindings]]
 name = "ROOMS"
