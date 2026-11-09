@@ -152,3 +152,6 @@ from `game.js` at game over.
 
 ## Ingested 2026-11-07
 - [ ] App Store has stale name. All 21 app-info localizations still say Quotestreak; the app is Coda since 2026-10-19 and 1.3.0/1.3.1 have cleared review, so probe Coda (or a short alternative) with asc-name-creator and set it on the next version.
+
+## Ingested 2026-11-08
+- [ ] Multiplayer doesn't work. Code doesn't pair properly and shit. You can add people but not play a game with them (screenshot `notes/attachments/2026-11-08/coda-1.png` from the App Store build: Live duel sheet, code YJUF, red line "That duel is full or gone. Start a new one." on the screen of the person who just made the code).
