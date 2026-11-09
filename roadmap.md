@@ -143,7 +143,6 @@ from `game.js` at game over.
 ## Ingested 2026-10-26
 
 ## Ingested 2026-10-30
-- [ ] Ship latest to App Store, refresh App Store screenshots
 
 ## Ingested 2026-10-31
   (blocked: Joshua picks the new name, 2026-11-01) Apple refused "Coda" on the 1.3.1 app info 2026-11-01 ("already being used"); one-name rule means the brand moves. Probed free: Apothegm, Aphorist, Misquote, Gnomic, Ascription, Epithet. Taken: Epigram Aphorism Maxim Adage Proverb Quip Byword Motto Epigraph Sententia Quotable Laconic Chreia Witticism Quotation Attribution Saying Utterance Paraphrase Florilegium Commonplace Citation Verbatim. iOS and Mac 1.3.1 drafts exist and keep the app info editable; listing restored to Quotestreak.
