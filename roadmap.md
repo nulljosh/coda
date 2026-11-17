@@ -153,3 +153,7 @@ from `game.js` at game over.
 - [ ] App Store has stale name. All 21 app-info localizations still say Quotestreak; the app is Coda since 2026-10-19 and 1.3.0/1.3.1 have cleared review, so probe Coda (or a short alternative) with asc-name-creator and set it on the next version.
 
 ## Ingested 2026-11-08
+
+## Ingested 2026-11-16
+- [ ] (Note "Coda") Is the App Store name still stale?
+- [ ] (Coda) GitHub is atrocious: run the tidy skill to clean it up, and stop letting this happen. Refresh the README and App Store screenshots.
