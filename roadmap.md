@@ -157,3 +157,7 @@ from `game.js` at game over.
 ## Ingested 2026-11-16
 - [ ] (Note "Coda") Is the App Store name still stale?
 - [ ] (Coda) GitHub is atrocious: run the tidy skill to clean it up, and stop letting this happen. Refresh the README and App Store screenshots.
+
+## Ingested 2026-11-23
+
+- [ ] **Coda**: macOS window needs translucent bar (Liquid Glass).
